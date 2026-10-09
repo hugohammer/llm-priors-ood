@@ -1,0 +1,114 @@
+  -> out/exp12_ci_for_mean.csv
+======================================================================================================================
+Prediction interval (as published) vs confidence interval for the MEAN lift
+======================================================================================================================
+dataset         family             metric      mean   prediction 95% (published)        CI generalising          CI fixed-pop
+Boston Housing  Prior-Mean         MSE       -0.18 [ -12.97,  +10.54]    [  -8.29,   +7.92]    [ -1.32,  +0.96] 
+Boston Housing  Independent-Prior  MSE       +7.40 [  -1.04,  +18.23]    [  +0.57,  +14.24]*   [ +6.50,  +8.31]*
+Boston Housing  Correlated-Prior   MSE       +7.85 [  -0.61,  +18.87]    [  +1.18,  +14.51]*   [ +6.87,  +8.83]*
+Boston Housing  Mixed              MSE       -0.18 [ -12.97,  +10.54]    [  -8.29,   +7.92]    [ -1.32,  +0.96] 
+Cancer          Prior-Mean         MSE       +2.37 [  -0.38,   +7.53]    [  +1.71,   +3.04]*   [ +1.81,  +2.94]*
+Cancer          Independent-Prior  MSE       +1.13 [  -1.24,   +3.44]    [  +0.60,   +1.66]*   [ +0.83,  +1.43]*
+Cancer          Correlated-Prior   MSE       +0.90 [  -1.11,   +3.38]    [  +0.43,   +1.38]*   [ +0.60,  +1.21]*
+Cancer          Mixed              MSE       +1.65 [  -0.26,   +5.30]    [  +1.19,   +2.11]*   [ +1.25,  +2.04]*
+Heart Disease   Prior-Mean         AUC       +0.08 [  -1.13,   +2.15]    [  -0.75,   +0.91]    [ -0.16,  +0.33] 
+Heart Disease   Prior-Mean         LogLoss  +12.23 [  -1.68,  +39.30]    [  +4.20,  +20.25]*   [ +8.01, +16.44]*
+Heart Disease   Independent-Prior  AUC       -0.07 [  -1.50,   +1.90]    [  -1.13,   +1.00]    [ -0.29,  +0.16] 
+Heart Disease   Independent-Prior  LogLoss  +10.78 [  -3.45,  +37.97]    [  +3.20,  +18.36]*   [ +6.42, +15.13]*
+Heart Disease   Correlated-Prior   AUC       +0.18 [  -1.03,   +2.47]    [  -0.68,   +1.04]    [ -0.08,  +0.45] 
+Heart Disease   Correlated-Prior   LogLoss  +12.43 [  -1.44,  +39.43]    [  +4.85,  +20.01]*   [ +8.20, +16.66]*
+Heart Disease   Mixed              AUC       +0.08 [  -1.13,   +2.15]    [  -0.75,   +0.91]    [ -0.16,  +0.33] 
+Heart Disease   Mixed              LogLoss  +12.23 [  -1.68,  +39.30]    [  +4.20,  +20.25]*   [ +8.01, +16.44]*
+Diabetes        Prior-Mean         AUC       +1.41 [  -0.28,   +3.54]    [  -0.11,   +2.93]    [ +1.17,  +1.65]*
+Diabetes        Prior-Mean         LogLoss   +3.44 [  -1.57,  +23.44]    [  -0.38,   +7.25]    [ +1.55,  +5.33]*
+Diabetes        Independent-Prior  AUC       +1.78 [  -0.22,   +4.11]    [  +0.12,   +3.44]*   [ +1.51,  +2.05]*
+Diabetes        Independent-Prior  LogLoss   +3.50 [  -1.80,  +23.41]    [  -0.52,   +7.51]    [ +1.64,  +5.36]*
+Diabetes        Correlated-Prior   AUC       +1.81 [  -0.24,   +4.14]    [  +0.16,   +3.47]*   [ +1.53,  +2.09]*
+Diabetes        Correlated-Prior   LogLoss   +3.28 [  -2.01,  +23.38]    [  -0.74,   +7.30]    [ +1.40,  +5.16]*
+Diabetes        Mixed              AUC       +1.38 [  -0.25,   +3.46]    [  -0.10,   +2.87]    [ +1.15,  +1.62]*
+Diabetes        Mixed              LogLoss   +3.46 [  -1.44,  +23.34]    [  -0.26,   +7.18]    [ +1.59,  +5.33]*
+Adult           Prior-Mean         AUC       -0.00 [  -0.01,   +0.00]    [  -0.00,   +0.00]    [ -0.00,  +0.00] 
+Adult           Prior-Mean         LogLoss   +0.00 [  -0.02,   +0.06]    [  -0.01,   +0.02]    [ -0.01,  +0.01] 
+Adult           Independent-Prior  AUC       -0.01 [  -0.04,   -0.01]*   [  -0.02,   -0.01]*   [ -0.02,  -0.01]*
+Adult           Independent-Prior  LogLoss   -0.05 [  -0.10,   -0.02]*   [  -0.08,   -0.02]*   [ -0.06,  -0.04]*
+Adult           Correlated-Prior   AUC       -0.01 [  -0.07,   +0.00]    [  -0.03,   +0.00]    [ -0.02,  -0.00]*
+Adult           Correlated-Prior   LogLoss   -0.04 [  -0.19,   +0.01]    [  -0.09,   +0.01]    [ -0.06,  -0.01]*
+Adult           Mixed              AUC       -0.00 [  -0.01,   +0.00]    [  -0.00,   +0.00]    [ -0.00,  +0.00] 
+Adult           Mixed              LogLoss   +0.00 [  -0.02,   +0.06]    [  -0.01,   +0.02]    [ -0.01,  +0.02] 
+
+cells whose interval excludes zero:
+  prediction interval (as published)      2 of 32
+       Adult / Independent-Prior / AUC  mean -0.01
+       Adult / Independent-Prior / LogLoss  mean -0.05
+  CI for mean, generalising              14 of 32
+       Boston Housing / Independent-Prior / MSE  mean +7.40
+       Boston Housing / Correlated-Prior / MSE  mean +7.85
+       Cancer / Prior-Mean / MSE  mean +2.37
+       Cancer / Independent-Prior / MSE  mean +1.13
+       Cancer / Correlated-Prior / MSE  mean +0.90
+       Cancer / Mixed / MSE  mean +1.65
+       Heart Disease / Prior-Mean / LogLoss  mean +12.23
+       Heart Disease / Independent-Prior / LogLoss  mean +10.78
+       Heart Disease / Correlated-Prior / LogLoss  mean +12.43
+       Heart Disease / Mixed / LogLoss  mean +12.23
+       Diabetes / Independent-Prior / AUC  mean +1.78
+       Diabetes / Correlated-Prior / AUC  mean +1.81
+       Adult / Independent-Prior / AUC  mean -0.01
+       Adult / Independent-Prior / LogLoss  mean -0.05
+  CI for mean, fixed population          22 of 32
+       Boston Housing / Independent-Prior / MSE  mean +7.40
+       Boston Housing / Correlated-Prior / MSE  mean +7.85
+       Cancer / Prior-Mean / MSE  mean +2.37
+       Cancer / Independent-Prior / MSE  mean +1.13
+       Cancer / Correlated-Prior / MSE  mean +0.90
+       Cancer / Mixed / MSE  mean +1.65
+       Heart Disease / Prior-Mean / LogLoss  mean +12.23
+       Heart Disease / Independent-Prior / LogLoss  mean +10.78
+       Heart Disease / Correlated-Prior / LogLoss  mean +12.43
+       Heart Disease / Mixed / LogLoss  mean +12.23
+       Diabetes / Prior-Mean / AUC  mean +1.41
+       Diabetes / Prior-Mean / LogLoss  mean +3.44
+       Diabetes / Independent-Prior / AUC  mean +1.78
+       Diabetes / Independent-Prior / LogLoss  mean +3.50
+       Diabetes / Correlated-Prior / AUC  mean +1.81
+       Diabetes / Correlated-Prior / LogLoss  mean +3.28
+       Diabetes / Mixed / AUC  mean +1.38
+       Diabetes / Mixed / LogLoss  mean +3.46
+       Adult / Independent-Prior / AUC  mean -0.01
+       Adult / Independent-Prior / LogLoss  mean -0.05
+       Adult / Correlated-Prior / AUC  mean -0.01
+       Adult / Correlated-Prior / LogLoss  mean -0.04
+
+variance split (how much of the width is target sampling):
+  Boston Housing  Prior-Mean         MSE      sd_split   4.11  sd_target   4.09  target share of variance  49.8%
+  Boston Housing  Independent-Prior  MSE      sd_split   3.26  sd_target   3.46  target share of variance  52.9%
+  Boston Housing  Correlated-Prior   MSE      sd_split   3.54  sd_target   3.36  target share of variance  47.5%
+  Boston Housing  Mixed              MSE      sd_split   4.11  sd_target   4.09  target share of variance  49.8%
+  Cancer          Prior-Mean         MSE      sd_split   2.04  sd_target   0.18  target share of variance   0.7%
+  Cancer          Independent-Prior  MSE      sd_split   1.08  sd_target   0.22  target share of variance   4.1%
+  Cancer          Correlated-Prior   MSE      sd_split   1.10  sd_target   0.18  target share of variance   2.7%
+  Cancer          Mixed              MSE      sd_split   1.43  sd_target   0.12  target share of variance   0.7%
+  Heart Disease   Prior-Mean         AUC      sd_split   0.68  sd_target   0.41  target share of variance  26.4%
+  Heart Disease   Prior-Mean         LogLoss  sd_split  11.77  sd_target   3.48  target share of variance   8.1%
+  Heart Disease   Independent-Prior  AUC      sd_split   0.64  sd_target   0.53  target share of variance  40.9%
+  Heart Disease   Independent-Prior  LogLoss  sd_split  12.17  sd_target   3.16  target share of variance   6.3%
+  Heart Disease   Correlated-Prior   AUC      sd_split   0.74  sd_target   0.42  target share of variance  24.1%
+  Heart Disease   Correlated-Prior   LogLoss  sd_split  11.83  sd_target   3.21  target share of variance   6.9%
+  Heart Disease   Mixed              AUC      sd_split   0.68  sd_target   0.41  target share of variance  26.4%
+  Heart Disease   Mixed              LogLoss  sd_split  11.77  sd_target   3.48  target share of variance   8.1%
+  Diabetes        Prior-Mean         AUC      sd_split   0.67  sd_target   0.77  target share of variance  56.5%
+  Diabetes        Prior-Mean         LogLoss  sd_split   5.28  sd_target   1.69  target share of variance   9.3%
+  Diabetes        Independent-Prior  AUC      sd_split   0.76  sd_target   0.84  target share of variance  54.6%
+  Diabetes        Independent-Prior  LogLoss  sd_split   5.20  sd_target   1.82  target share of variance  10.9%
+  Diabetes        Correlated-Prior   AUC      sd_split   0.78  sd_target   0.83  target share of variance  53.2%
+  Diabetes        Correlated-Prior   LogLoss  sd_split   5.25  sd_target   1.81  target share of variance  10.7%
+  Diabetes        Mixed              AUC      sd_split   0.66  sd_target   0.75  target share of variance  56.5%
+  Diabetes        Mixed              LogLoss  sd_split   5.24  sd_target   1.64  target share of variance   8.9%
+  Adult           Prior-Mean         AUC      sd_split   0.00  sd_target   0.00  target share of variance  17.8%
+  Adult           Prior-Mean         LogLoss  sd_split   0.02  sd_target   0.00  target share of variance   5.8%
+  Adult           Independent-Prior  AUC      sd_split   0.01  sd_target   0.00  target share of variance  20.1%
+  Adult           Independent-Prior  LogLoss  sd_split   0.01  sd_target   0.01  target share of variance  42.3%
+  Adult           Correlated-Prior   AUC      sd_split   0.02  sd_target   0.01  target share of variance  10.4%
+  Adult           Correlated-Prior   LogLoss  sd_split   0.04  sd_target   0.02  target share of variance  19.8%
+  Adult           Mixed              AUC      sd_split   0.00  sd_target   0.00  target share of variance  18.7%
+  Adult           Mixed              LogLoss  sd_split   0.02  sd_target   0.00  target share of variance   6.0%

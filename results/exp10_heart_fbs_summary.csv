@@ -1,0 +1,3 @@
+arm,n_features,baseline_ood_auc,cross_variant,cross_family,cross_auc_lift,cross_logloss_lift,prior_mean_variant,prior_mean_auc_lift,prior_mean_logloss_lift,independent_variant,independent_auc_lift,independent_logloss_lift,correlated_variant,correlated_auc_lift,correlated_logloss_lift
+with fbs (as published),18,0.8778742266137224,Opus 4.5,correlated,0.9467206648082767,8.02659732808238,Opus 4.5,0.9256824278125443,8.104501177161788,Gemini Pro (R),0.749487192973228,6.408315111521141,Opus 4.5,0.9467206648082767,8.02659732808238
+without fbs,16,0.8774586757780035,Opus 4.5,correlated,0.9419069669543275,7.995796567231409,Opus 4.5,1.0155756682803512,8.507633248871665,Gemini Pro (R),0.6788044622184725,7.15287105898962,Opus 4.5,0.9419069669543275,7.995796567231409

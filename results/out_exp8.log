@@ -1,0 +1,67 @@
+
+=== Boston Housing (regression) ===
+  cells 48   OOD lift floor -2.27%   ceiling +11.15%
+  rule                         selected cell                              CV  OOD lift
+  within-family: Prior-Mean    Gemini Pro / prior_mean               16.0154    +2.67%
+  within-family: Independent-Prior Opus 4.5 / independent                16.1826   +10.29%
+  within-family: Correlated-Prior Opus 4.5 / correlated                 16.0864   +11.15%
+  within-family: Mixed         Gemini Pro / mixed                    16.0154    +2.67%
+  CROSS-FAMILY (source CV)     Gemini Pro / prior_mean               16.0154    +2.67%
+  OOD-BEST (what Fig 4 plotted) Opus 4.5                                        +11.15%
+  CV margin over runner-up 0.00000   fold SE at winner 2.89363   margin/SE = 0.00
+
+=== Cancer (regression) ===
+  cells 48   OOD lift floor -2.92%   ceiling +6.11%
+  rule                         selected cell                              CV  OOD lift
+  within-family: Prior-Mean    Opus 4.5 / prior_mean                421.0971    +3.90%
+  within-family: Independent-Prior GPT-5.1 / independent                418.8396    +2.78%
+  within-family: Correlated-Prior Gemini Pro (R) / correlated          418.8035    +2.12%
+  within-family: Mixed         Opus 4.5 / mixed                     421.0040    +2.70%
+  CROSS-FAMILY (source CV)     Gemini Pro (R) / correlated          418.8035    +2.12%
+  OOD-BEST (what Fig 4 plotted) Opus 4.5 (R)                                     +6.11%
+  CV margin over runner-up 0.03606   fold SE at winner 24.76496   margin/SE = 0.00
+
+=== Heart Disease (classification) ===
+  cells 48   OOD lift floor -1.33%   ceiling +1.67%
+  rule                         selected cell                              CV  OOD lift
+  within-family: Prior-Mean    Opus 4.5 / prior_mean                  0.8648    +0.93%
+  within-family: Independent-Prior Gemini Pro (R) / independent           0.8665    +0.75%
+  within-family: Correlated-Prior Opus 4.5 / correlated                  0.8690    +0.95%
+  within-family: Mixed         Opus 4.5 / mixed                       0.8648    +0.93%
+  CROSS-FAMILY (source CV)     Opus 4.5 / correlated                  0.8690    +0.95%
+  OOD-BEST (what Fig 4 plotted) Gemini Pro (R)                                   +1.67%
+  CV margin over runner-up 0.00220   fold SE at winner 0.01868   margin/SE = 0.12
+
+=== Diabetes (classification) ===
+  cells 48   OOD lift floor -0.47%   ceiling +2.08%
+  rule                         selected cell                              CV  OOD lift
+  within-family: Prior-Mean    Opus 4.5 / prior_mean                  0.8745    +0.85%
+  within-family: Independent-Prior Opus 4.5 / independent                 0.8748    +1.00%
+  within-family: Correlated-Prior Opus 4.5 / correlated                  0.8753    +0.97%
+  within-family: Mixed         Opus 4.5 / mixed                       0.8745    +0.86%
+  CROSS-FAMILY (source CV)     Opus 4.5 / correlated                  0.8753    +0.97%
+  OOD-BEST (what Fig 4 plotted) GPT-5-mini                                       +2.08%
+  CV margin over runner-up 0.00058   fold SE at winner 0.03276   margin/SE = 0.02
+
+=== Adult (classification) ===
+  cells 48   OOD lift floor -0.82%   ceiling +0.01%
+  rule                         selected cell                              CV  OOD lift
+  within-family: Prior-Mean    GPT-5-mini (R) / prior_mean            0.9096    +0.00%
+  within-family: Independent-Prior Gemini Flash (R) / independent         0.9096    -0.03%
+  within-family: Correlated-Prior Gemini Flash / correlated              0.9096    -0.01%
+  within-family: Mixed         GPT-5-mini (R) / mixed                 0.9096    +0.00%
+  CROSS-FAMILY (source CV)     Gemini Flash (R) / independent         0.9096    -0.03%
+  OOD-BEST (what Fig 4 plotted) Haiku 4.5                                        +0.01%
+  CV margin over runner-up 0.00000   fold SE at winner 0.00155   margin/SE = 0.00
+  -> out/exp8_selection_cells.csv
+  -> out/exp8_selection_summary.csv
+
+====================================================================================================
+HONEST SELECTION: source-CV cross-family vs what the figure plotted
+====================================================================================================
+dataset             floor   ceiling   cross-family (CV)  OOD-best (old)      gap
+Boston Housing     -2.27%   +11.15%              +2.67%         +11.15%   +8.48%
+Cancer             -2.92%    +6.11%              +2.12%          +6.11%   +3.99%
+Heart Disease      -1.33%    +1.67%              +0.95%          +1.67%   +0.72%
+Diabetes           -0.47%    +2.08%              +0.97%          +2.08%   +1.11%
+Adult              -0.82%    +0.01%              -0.03%          +0.01%   +0.04%

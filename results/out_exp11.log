@@ -1,0 +1,59 @@
+  Boston Housing  Prior-Mean         joint  -0.18% [-12.97, +10.54]  below   48%   (resplit-only [ -7.22,  +6.55])  (7s)
+  Boston Housing  Independent-Prior  joint  +7.40% [ -1.04, +18.23]  below    4%   (resplit-only [ +2.66, +14.43])  (7s)
+  Boston Housing  Correlated-Prior   joint  +7.85% [ -0.61, +18.87]  below    3%   (resplit-only [ +2.09, +15.27])  (7s)
+  Boston Housing  Mixed              joint  -0.18% [-12.97, +10.54]  below   48%   (resplit-only [ -7.22,  +6.55])  (7s)
+  Cancer          Prior-Mean         joint  +2.37% [ -0.38,  +7.53]  below   12%   (resplit-only [ -0.30,  +7.25])  (9s)
+  Cancer          Independent-Prior  joint  +1.13% [ -1.24,  +3.44]  below   11%   (resplit-only [ -1.11,  +3.33])  (9s)
+  Cancer          Correlated-Prior   joint  +0.90% [ -1.11,  +3.38]  below   17%   (resplit-only [ -0.89,  +3.17])  (9s)
+  Cancer          Mixed              joint  +1.65% [ -0.26,  +5.30]  below   11%   (resplit-only [ -0.20,  +5.10])  (9s)
+  Heart Disease   Prior-Mean         joint  +0.08% [ -1.13,  +2.15]  below   51%   (resplit-only [ -0.76,  +1.50])  (52s)
+  Heart Disease   Independent-Prior  joint  -0.07% [ -1.50,  +1.90]  below   57%   (resplit-only [ -0.79,  +1.20])  (56s)
+  Heart Disease   Correlated-Prior   joint  +0.18% [ -1.03,  +2.47]  below   47%   (resplit-only [ -0.61,  +1.81])  (64s)
+  Heart Disease   Mixed              joint  +0.08% [ -1.13,  +2.15]  below   51%   (resplit-only [ -0.76,  +1.50])  (51s)
+  Diabetes        Prior-Mean         joint  +1.41% [ -0.28,  +3.54]  below    5%   (resplit-only [ +0.26,  +2.62])  (50s)
+  Diabetes        Independent-Prior  joint  +1.78% [ -0.22,  +4.11]  below    4%   (resplit-only [ +0.59,  +3.15])  (53s)
+  Diabetes        Correlated-Prior   joint  +1.81% [ -0.24,  +4.14]  below    4%   (resplit-only [ +0.59,  +3.20])  (53s)
+  Diabetes        Mixed              joint  +1.38% [ -0.25,  +3.46]  below    5%   (resplit-only [ +0.27,  +2.56])  (50s)
+  Adult           Prior-Mean         joint  -0.00% [ -0.01,  +0.00]  below   64%   (resplit-only [ -0.00,  +0.00])  (42s)
+  Adult           Independent-Prior  joint  -0.01% [ -0.04,  -0.01]  below  100%   (resplit-only [ -0.03,  -0.01])  (104s)
+  Adult           Correlated-Prior   joint  -0.01% [ -0.07,  +0.00]  below   96%   (resplit-only [ -0.05,  -0.01])  (89s)
+  Adult           Mixed              joint  -0.00% [ -0.01,  +0.00]  below   67%   (resplit-only [ -0.00,  +0.00])  (42s)
+  -> out/exp11_joint.csv
+  -> out/exp11_joint_draws.csv
+
+================================================================================================================
+Joint interval over source split + lambda selection + target sample
+================================================================================================================
+dataset          family              metric       mean       joint 2.5-97.5   below    resplit-only 2.5-97.5
+Boston Housing   Prior-Mean          MSE        -0.18%     [-12.97, +10.54]    48%           [-7.22, +6.55]
+Boston Housing   Independent-Prior   MSE        +7.40%      [-1.04, +18.23]     4%          [+2.66, +14.43]
+Boston Housing   Correlated-Prior    MSE        +7.85%      [-0.61, +18.87]     3%          [+2.09, +15.27]
+Boston Housing   Mixed               MSE        -0.18%     [-12.97, +10.54]    48%           [-7.22, +6.55]
+Cancer           Prior-Mean          MSE        +2.37%       [-0.38, +7.53]    12%           [-0.30, +7.25]
+Cancer           Independent-Prior   MSE        +1.13%       [-1.24, +3.44]    11%           [-1.11, +3.33]
+Cancer           Correlated-Prior    MSE        +0.90%       [-1.11, +3.38]    17%           [-0.89, +3.17]
+Cancer           Mixed               MSE        +1.65%       [-0.26, +5.30]    11%           [-0.20, +5.10]
+Heart Disease    Prior-Mean          AUC        +0.08%       [-1.13, +2.15]    51%           [-0.76, +1.50]
+Heart Disease    Prior-Mean          LogLoss   +12.23%      [-1.68, +39.30]     8%          [+0.22, +36.53]
+Heart Disease    Independent-Prior   AUC        -0.07%       [-1.50, +1.90]    57%           [-0.79, +1.20]
+Heart Disease    Independent-Prior   LogLoss   +10.78%      [-3.45, +37.97]    19%          [-1.49, +35.07]
+Heart Disease    Correlated-Prior    AUC        +0.18%       [-1.03, +2.47]    47%           [-0.61, +1.81]
+Heart Disease    Correlated-Prior    LogLoss   +12.43%      [-1.44, +39.43]     7%          [+0.41, +36.69]
+Heart Disease    Mixed               AUC        +0.08%       [-1.13, +2.15]    51%           [-0.76, +1.50]
+Heart Disease    Mixed               LogLoss   +12.23%      [-1.68, +39.30]     8%          [+0.22, +36.53]
+Diabetes         Prior-Mean          AUC        +1.41%       [-0.28, +3.54]     5%           [+0.26, +2.62]
+Diabetes         Prior-Mean          LogLoss    +3.44%      [-1.57, +23.44]    17%          [-0.56, +20.38]
+Diabetes         Independent-Prior   AUC        +1.78%       [-0.22, +4.11]     4%           [+0.59, +3.15]
+Diabetes         Independent-Prior   LogLoss    +3.50%      [-1.80, +23.41]    15%          [-0.14, +20.34]
+Diabetes         Correlated-Prior    AUC        +1.81%       [-0.24, +4.14]     4%           [+0.59, +3.20]
+Diabetes         Correlated-Prior    LogLoss    +3.28%      [-2.01, +23.38]    18%          [-0.49, +20.33]
+Diabetes         Mixed               AUC        +1.38%       [-0.25, +3.46]     5%           [+0.27, +2.56]
+Diabetes         Mixed               LogLoss    +3.46%      [-1.44, +23.34]    17%          [-0.51, +20.25]
+Adult            Prior-Mean          AUC        -0.00%       [-0.01, +0.00]    64%           [-0.00, +0.00]
+Adult            Prior-Mean          LogLoss    +0.00%       [-0.02, +0.06]    56%           [-0.02, +0.04]
+Adult            Independent-Prior   AUC        -0.01%       [-0.04, -0.01]   100%           [-0.03, -0.01]
+Adult            Independent-Prior   LogLoss    -0.05%       [-0.10, -0.02]   100%           [-0.08, -0.04]
+Adult            Correlated-Prior    AUC        -0.01%       [-0.07, +0.00]    96%           [-0.05, -0.01]
+Adult            Correlated-Prior    LogLoss    -0.04%       [-0.19, +0.01]    91%           [-0.13, -0.01]
+Adult            Mixed               AUC        -0.00%       [-0.01, +0.00]    67%           [-0.00, +0.00]
+Adult            Mixed               LogLoss    +0.00%       [-0.02, +0.06]    45%           [-0.02, +0.04]

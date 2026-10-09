@@ -1,0 +1,70 @@
+  Boston Housing  Prior-Mean         permuted  real   +2.67%  placebo mean   -1.14%  p=0.0050
+  Boston Housing  Prior-Mean         signflip  real   +2.67%  placebo mean   -1.21%  p=0.0050
+  Boston Housing  Independent-Prior  permuted  real  +10.29%  placebo mean  -26.42%  p=0.0050
+  Boston Housing  Independent-Prior  signflip  real  +10.29%  placebo mean  -14.93%  p=0.0149
+  Boston Housing  Correlated-Prior   permuted  real  +11.15%  placebo mean   -1.91%  p=0.0100
+  Boston Housing  Correlated-Prior   signflip  real  +11.15%  placebo mean   -4.27%  p=0.0100
+  Cancer          Prior-Mean         permuted  real   +3.90%  placebo mean   -2.89%  p=0.0050
+  Cancer          Prior-Mean         signflip  real   +3.90%  placebo mean   -2.23%  p=0.0149
+  Cancer          Independent-Prior  permuted  real   +2.78%  placebo mean   -2.57%  p=0.0050
+  Cancer          Independent-Prior  signflip  real   +2.78%  placebo mean   -0.77%  p=0.0100
+  Cancer          Correlated-Prior   permuted  real   +2.12%  placebo mean   -2.59%  p=0.0100
+  Cancer          Correlated-Prior   signflip  real   +2.12%  placebo mean   -0.18%  p=0.1095
+  Heart Disease   Prior-Mean         permuted  real   +0.93%  placebo mean   -2.99%  p=0.0396
+  Heart Disease   Prior-Mean         signflip  real   +0.93%  placebo mean   -2.82%  p=0.0099
+  Heart Disease   Independent-Prior  permuted  real   +0.75%  placebo mean   -5.58%  p=0.0594
+  Heart Disease   Independent-Prior  signflip  real   +0.75%  placebo mean   +0.48%  p=0.2277
+  Heart Disease   Correlated-Prior   permuted  real   +0.95%  placebo mean   -7.71%  p=0.0297
+  Heart Disease   Correlated-Prior   signflip  real   +0.95%  placebo mean   -0.62%  p=0.0891
+  Diabetes        Prior-Mean         permuted  real   +0.85%  placebo mean   -0.55%  p=0.0099
+  Diabetes        Prior-Mean         signflip  real   +0.85%  placebo mean   -0.37%  p=0.0792
+  Diabetes        Independent-Prior  permuted  real   +1.00%  placebo mean   -4.38%  p=0.0297
+  Diabetes        Independent-Prior  signflip  real   +1.00%  placebo mean  -20.79%  p=0.0495
+  Diabetes        Correlated-Prior   permuted  real   +0.97%  placebo mean   -3.24%  p=0.0099
+  Diabetes        Correlated-Prior   signflip  real   +0.97%  placebo mean  -13.34%  p=0.1089
+  -> out/exp3_placebo.csv
+  -> out/exp3_placebo_draws.csv
+
+========================================================================================================
+Placebo control: does the prior's CONTENT drive the gain?
+  metric = OOD MSE lift for regression, OOD AUC lift for classification
+========================================================================================================
+dataset          family              placebo       real  placebo mean        placebo range        p
+Boston Housing   Prior-Mean          permuted    +2.67%        -1.14%       [-5.33, +2.28]   0.0050
+Boston Housing   Prior-Mean          signflip    +2.67%        -1.21%       [-6.89, +2.32]   0.0050
+Boston Housing   Independent-Prior   permuted   +10.29%       -26.42%     [-119.06, +7.90]   0.0050
+Boston Housing   Independent-Prior   signflip   +10.29%       -14.93%     [-40.32, +12.25]   0.0149
+Boston Housing   Correlated-Prior    permuted   +11.15%        -1.91%     [-13.98, +12.01]   0.0100
+Boston Housing   Correlated-Prior    signflip   +11.15%        -4.27%     [-16.33, +14.72]   0.0100
+Cancer           Prior-Mean          permuted    +3.90%        -2.89%      [-10.26, -0.12]   0.0050
+Cancer           Prior-Mean          signflip    +3.90%        -2.23%       [-4.89, +4.67]   0.0149
+Cancer           Independent-Prior   permuted    +2.78%        -2.57%       [-6.59, +2.61]   0.0050
+Cancer           Independent-Prior   signflip    +2.78%        -0.77%       [-5.45, +3.67]   0.0100
+Cancer           Correlated-Prior    permuted    +2.12%        -2.59%       [-7.78, +2.83]   0.0100
+Cancer           Correlated-Prior    signflip    +2.12%        -0.18%       [-6.77, +4.23]   0.1095
+Heart Disease    Prior-Mean          permuted    +0.93%        -2.99%      [-15.08, +1.60]   0.0396
+Heart Disease    Prior-Mean          signflip    +0.93%        -2.82%      [-11.02, +0.18]   0.0099
+Heart Disease    Independent-Prior   permuted    +0.75%        -5.58%      [-15.86, +1.51]   0.0594
+Heart Disease    Independent-Prior   signflip    +0.75%        +0.48%       [-0.28, +1.41]   0.2277
+Heart Disease    Correlated-Prior    permuted    +0.95%        -7.71%      [-18.35, +2.82]   0.0297
+Heart Disease    Correlated-Prior    signflip    +0.95%        -0.62%       [-3.32, +1.47]   0.0891
+Diabetes         Prior-Mean          permuted    +0.85%        -0.55%       [-1.46, +0.77]   0.0099
+Diabetes         Prior-Mean          signflip    +0.85%        -0.37%       [-0.85, +1.50]   0.0792
+Diabetes         Independent-Prior   permuted    +1.00%        -4.38%      [-17.79, +1.15]   0.0297
+Diabetes         Independent-Prior   signflip    +1.00%       -20.79%      [-37.94, +1.29]   0.0495
+Diabetes         Correlated-Prior    permuted    +0.97%        -3.24%      [-12.40, +0.94]   0.0099
+Diabetes         Correlated-Prior    signflip    +0.97%       -13.34%      [-26.64, +1.56]   0.1089
+
+--- classification, same test on OOD log loss ---
+Heart Disease    Prior-Mean          permuted  real   +8.10%  placebo mean  -11.42%  p=0.0297
+Heart Disease    Prior-Mean          signflip  real   +8.10%  placebo mean   -9.74%  p=0.0099
+Heart Disease    Independent-Prior   permuted  real   +6.41%  placebo mean  -29.14%  p=0.0693
+Heart Disease    Independent-Prior   signflip  real   +6.41%  placebo mean   +6.52%  p=0.5347
+Heart Disease    Correlated-Prior    permuted  real   +8.03%  placebo mean  -85.33%  p=0.0198
+Heart Disease    Correlated-Prior    signflip  real   +8.03%  placebo mean   +0.37%  p=0.0495
+Diabetes         Prior-Mean          permuted  real   +4.77%  placebo mean   +2.48%  p=0.0198
+Diabetes         Prior-Mean          signflip  real   +4.77%  placebo mean   +2.37%  p=0.0495
+Diabetes         Independent-Prior   permuted  real   +4.58%  placebo mean  -10.21%  p=0.0594
+Diabetes         Independent-Prior   signflip  real   +4.58%  placebo mean  -63.25%  p=0.0099
+Diabetes         Correlated-Prior    permuted  real   +4.62%  placebo mean   -5.47%  p=0.0099
+Diabetes         Correlated-Prior    signflip  real   +4.62%  placebo mean  -29.73%  p=0.0198

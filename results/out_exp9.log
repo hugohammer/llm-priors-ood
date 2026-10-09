@@ -1,0 +1,66 @@
+
+=== Boston Housing ===
+  Independent-Prior  eps=1e-08      zero-spread  4/11  lambda         10  lift  +10.29%
+  Independent-Prior  eps=1e-06      zero-spread  4/11  lambda         10  lift  +10.29%
+  Independent-Prior  eps=0.0001     zero-spread  4/11  lambda         10  lift  +10.30%
+  Independent-Prior  eps=0.01       zero-spread  4/11  lambda         10  lift   +9.27%
+  Independent-Prior  eps=0.1        zero-spread  4/11  lambda      39.81  lift   +7.53%
+  Correlated-Prior   eps=1e-08      zero-spread  4/11  lambda      15.85  lift  +11.15%
+  Correlated-Prior   eps=1e-06      zero-spread  4/11  lambda      15.85  lift  +11.15%
+  Correlated-Prior   eps=0.0001     zero-spread  4/11  lambda      15.85  lift  +11.15%
+  Correlated-Prior   eps=0.01       zero-spread  4/11  lambda         10  lift   +9.70%
+  Correlated-Prior   eps=0.1        zero-spread  4/11  lambda      39.81  lift   +7.69%
+  Correlated-Prior   Ledoit-Wolf    zero-spread  4/11  lambda      15.85  lift  +11.10%
+
+=== Cancer ===
+  Independent-Prior  eps=1e-08      zero-spread  0/13  lambda      158.5  lift   +2.78%
+  Independent-Prior  eps=1e-06      zero-spread  0/13  lambda      158.5  lift   +2.78%
+  Independent-Prior  eps=0.0001     zero-spread  0/13  lambda      158.5  lift   +2.78%
+  Independent-Prior  eps=0.01       zero-spread  0/13  lambda      158.5  lift   +2.75%
+  Independent-Prior  eps=0.1        zero-spread  0/13  lambda      158.5  lift   +2.44%
+  Correlated-Prior   eps=1e-08      zero-spread  0/13  lambda      158.5  lift   +2.12%
+  Correlated-Prior   eps=1e-06      zero-spread  0/13  lambda      158.5  lift   +2.12%
+  Correlated-Prior   eps=0.0001     zero-spread  0/13  lambda      158.5  lift   +2.12%
+  Correlated-Prior   eps=0.01       zero-spread  0/13  lambda      158.5  lift   +2.12%
+  Correlated-Prior   eps=0.1        zero-spread  0/13  lambda      158.5  lift   +2.08%
+  Correlated-Prior   Ledoit-Wolf    zero-spread  0/13  lambda      158.5  lift   +2.20%
+
+=== Heart Disease ===
+  Independent-Prior  eps=1e-08      zero-spread  0/18  lambda     0.2512  lift   +0.75%  logloss   +6.41%
+  Independent-Prior  eps=1e-06      zero-spread  0/18  lambda     0.2512  lift   +0.75%  logloss   +6.41%
+  Independent-Prior  eps=0.0001     zero-spread  0/18  lambda     0.2512  lift   +0.73%  logloss   +6.40%
+  Independent-Prior  eps=0.01       zero-spread  0/18  lambda      0.631  lift   +0.41%  logloss   +4.34%
+  Independent-Prior  eps=0.1        zero-spread  0/18  lambda      3.981  lift   +0.09%  logloss   +2.95%
+  Correlated-Prior   eps=1e-08      zero-spread  2/18  lambda       0.01  lift   +0.94%  logloss   +8.02%
+  Correlated-Prior   eps=1e-06      zero-spread  2/18  lambda       0.01  lift   +0.95%  logloss   +8.03%
+  Correlated-Prior   eps=0.0001     zero-spread  2/18  lambda    0.01585  lift   +0.90%  logloss   +7.80%
+  Correlated-Prior   eps=0.01       zero-spread  2/18  lambda      15.85  lift   +0.93%  logloss   +8.03%
+  Correlated-Prior   eps=0.1        zero-spread  2/18  lambda        100  lift   +0.93%  logloss   +8.11%
+  Correlated-Prior   Ledoit-Wolf    zero-spread  2/18  lambda    0.01585  lift   +0.93%  logloss   +7.83%
+
+=== Diabetes ===
+  Independent-Prior  eps=1e-08      zero-spread  2/ 7  lambda     0.3981  lift   +1.00%  logloss   +4.61%
+  Independent-Prior  eps=1e-06      zero-spread  2/ 7  lambda     0.3981  lift   +1.00%  logloss   +4.61%
+  Independent-Prior  eps=0.0001     zero-spread  2/ 7  lambda          1  lift   +0.90%  logloss   +4.69%
+  Independent-Prior  eps=0.01       zero-spread  2/ 7  lambda      3.981  lift   +0.86%  logloss   +4.75%
+  Independent-Prior  eps=0.1        zero-spread  2/ 7  lambda      39.81  lift   +0.85%  logloss   +4.76%
+  Correlated-Prior   eps=1e-08      zero-spread  2/ 7  lambda      0.631  lift   +0.97%  logloss   +4.62%
+  Correlated-Prior   eps=1e-06      zero-spread  2/ 7  lambda      0.631  lift   +0.97%  logloss   +4.62%
+  Correlated-Prior   eps=0.0001     zero-spread  2/ 7  lambda      0.631  lift   +0.97%  logloss   +4.63%
+  Correlated-Prior   eps=0.01       zero-spread  2/ 7  lambda      3.981  lift   +0.86%  logloss   +4.75%
+  Correlated-Prior   eps=0.1        zero-spread  2/ 7  lambda      39.81  lift   +0.84%  logloss   +4.76%
+  Correlated-Prior   Ledoit-Wolf    zero-spread  2/ 7  lambda      1.585  lift   +0.87%  logloss   +4.69%
+
+=== Adult ===
+  Independent-Prior  eps=1e-08      zero-spread  0/20  lambda   0.000631  lift   -0.03%  logloss   -0.06%
+  Independent-Prior  eps=1e-06      zero-spread  0/20  lambda   0.000631  lift   -0.01%  logloss   -0.00%
+  Independent-Prior  eps=0.0001     zero-spread  0/20  lambda   0.003981  lift   -0.00%  logloss   +0.06%
+  Independent-Prior  eps=0.01       zero-spread  0/20  lambda   0.003981  lift   +0.00%  logloss   -0.01%
+  Independent-Prior  eps=0.1        zero-spread  0/20  lambda    0.02512  lift   +0.00%  logloss   -0.01%
+  Correlated-Prior   eps=1e-08      zero-spread  0/20  lambda     0.0001  lift   -0.01%  logloss   -0.03%
+  Correlated-Prior   eps=1e-06      zero-spread  0/20  lambda   0.000631  lift   -0.01%  logloss   -0.03%
+  Correlated-Prior   eps=0.0001     zero-spread  0/20  lambda    0.02512  lift   -0.03%  logloss   +0.14%
+  Correlated-Prior   eps=0.01       zero-spread  0/20  lambda   0.003981  lift   +0.00%  logloss   -0.01%
+  Correlated-Prior   eps=0.1        zero-spread  0/20  lambda     0.1585  lift   -0.00%  logloss   +0.00%
+  Correlated-Prior   Ledoit-Wolf    zero-spread  0/20  lambda   0.003981  lift   -0.01%  logloss   +0.01%
+  -> out/exp9_epsilon.csv

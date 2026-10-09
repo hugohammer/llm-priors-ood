@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+message: "If you use this software or the elicited priors, please cite the paper."
+title: "LLM-elicited coefficient priors under domain shift"
+abstract: >-
+  Code, elicited priors and results for a study of whether coefficient priors
+  elicited from large language models improve out-of-distribution prediction
+  when used as the shrinkage target of a regularised regression.
+authors:
+  - family-names: Langseth
+    given-names: Sølve
+  - family-names: Hellton
+    given-names: Kristoffer H.
+  - family-names: Hammer
+    given-names: Hugo L.
+    email: hugo.hammer@oslomet.no
+repository-code: "https://github.com/hugohammer/llm-priors-ood"
+license: MIT

@@ -1,0 +1,27 @@
+
+=== with fbs (as published) === p = 18 features, baseline OOD AUC 0.8779
+  Prior-Mean         Opus 4.5         AUC lift  +0.93%   log-loss lift   +8.10%
+  Independent-Prior  Gemini Pro (R)   AUC lift  +0.75%   log-loss lift   +6.41%
+  Correlated-Prior   Opus 4.5         AUC lift  +0.95%   log-loss lift   +8.03%
+  CROSS-FAMILY (CV)  Opus 4.5         AUC lift  +0.95%   log-loss lift   +8.03%
+
+=== without fbs === p = 16 features, baseline OOD AUC 0.8775
+  Prior-Mean         Opus 4.5         AUC lift  +1.02%   log-loss lift   +8.51%
+  Independent-Prior  Gemini Pro (R)   AUC lift  +0.68%   log-loss lift   +7.15%
+  Correlated-Prior   Opus 4.5         AUC lift  +0.94%   log-loss lift   +8.00%
+  CROSS-FAMILY (CV)  Opus 4.5         AUC lift  +0.94%   log-loss lift   +8.00%
+  -> out/exp10_heart_fbs_cells.csv
+  -> out/exp10_heart_fbs_summary.csv
+
+============================================================================================
+Does the Heart Disease claim survive dropping the audited feature?
+============================================================================================
+family                             with fbs            without fbs       change
+Prior-Mean AUC                       +0.93%                 +1.02%       +0.09%
+Prior-Mean log loss                  +8.10%                 +8.51%       +0.40%
+Independent-Prior AUC                 +0.75%                 +0.68%       -0.07%
+Independent-Prior log loss                 +6.41%                 +7.15%       +0.74%
+Correlated-Prior AUC                 +0.95%                 +0.94%       -0.00%
+Correlated-Prior log loss                 +8.03%                 +8.00%       -0.03%
+cross-family AUC                     +0.95%                 +0.94%       -0.00%
+cross-family logloss                 +8.03%                 +8.00%       -0.03%

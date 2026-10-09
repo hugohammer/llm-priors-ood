@@ -1,0 +1,452 @@
+[
+  {
+    "Pregnancies": 0.05,
+    "Glucose": 0.03,
+    "BloodPressure": 0.005,
+    "SkinThickness": 0.005,
+    "Insulin": 0.001,
+    "BMI": 0.06,
+    "DiabetesPedigreeFunction": 1.0
+  },
+  {
+    "Pregnancies": 0.06,
+    "Glucose": 0.03,
+    "BloodPressure": 0.005,
+    "SkinThickness": 0.004,
+    "Insulin": 0.001,
+    "BMI": 0.04,
+    "DiabetesPedigreeFunction": 1.0
+  },
+  {
+    "Pregnancies": 0.08,
+    "Glucose": 0.025,
+    "BloodPressure": 0.005,
+    "SkinThickness": 0.003,
+    "Insulin": 0.001,
+    "BMI": 0.05,
+    "DiabetesPedigreeFunction": 0.8
+  },
+  {
+    "Pregnancies": 0.03,
+    "Glucose": 0.025,
+    "BloodPressure": 0.01,
+    "SkinThickness": 0.005,
+    "Insulin": 0.001,
+    "BMI": 0.04,
+    "DiabetesPedigreeFunction": 0.8
+  },
+  {
+    "Pregnancies": 0.04,
+    "Glucose": 0.03,
+    "BloodPressure": 0.004,
+    "SkinThickness": 0.005,
+    "Insulin": 0.0012,
+    "BMI": 0.06,
+    "DiabetesPedigreeFunction": 0.9
+  },
+  {
+    "Pregnancies": 0.04,
+    "Glucose": 0.03,
+    "BloodPressure": 0.004,
+    "SkinThickness": 0.007,
+    "Insulin": 0.001,
+    "BMI": 0.05,
+    "DiabetesPedigreeFunction": 0.6
+  },
+  {
+    "Pregnancies": 0.03,
+    "Glucose": 0.02,
+    "BloodPressure": 0.01,
+    "SkinThickness": 0.003,
+    "Insulin": 0.001,
+    "BMI": 0.04,
+    "DiabetesPedigreeFunction": 0.9
+  },
+  {
+    "Pregnancies": 0.06,
+    "Glucose": 0.02,
+    "BloodPressure": 0.004,
+    "SkinThickness": 0.005,
+    "Insulin": 0.001,
+    "BMI": 0.05,
+    "DiabetesPedigreeFunction": 0.9
+  },
+  {
+    "Pregnancies": 0.06,
+    "Glucose": 0.03,
+    "BloodPressure": 0.008,
+    "SkinThickness": 0.004,
+    "Insulin": 0.0008,
+    "BMI": 0.08,
+    "DiabetesPedigreeFunction": 1.0
+  },
+  {
+    "Pregnancies": 0.05,
+    "Glucose": 0.02,
+    "BloodPressure": 0.005,
+    "SkinThickness": 0.005,
+    "Insulin": 0.002,
+    "BMI": 0.04,
+    "DiabetesPedigreeFunction": 0.8
+  },
+  {
+    "Pregnancies": 0.05,
+    "Glucose": 0.03,
+    "BloodPressure": 0.01,
+    "SkinThickness": 0.005,
+    "Insulin": 0.002,
+    "BMI": 0.05,
+    "DiabetesPedigreeFunction": 0.8
+  },
+  {
+    "Pregnancies": 0.04,
+    "Glucose": 0.02,
+    "BloodPressure": 0.003,
+    "SkinThickness": 0.002,
+    "Insulin": 0.001,
+    "BMI": 0.04,
+    "DiabetesPedigreeFunction": 0.8
+  },
+  {
+    "Pregnancies": 0.03,
+    "Glucose": 0.02,
+    "BloodPressure": 0.003,
+    "SkinThickness": 0.002,
+    "Insulin": 0.001,
+    "BMI": 0.04,
+    "DiabetesPedigreeFunction": 0.8
+  },
+  {
+    "Pregnancies": 0.05,
+    "Glucose": 0.03,
+    "BloodPressure": 0.005,
+    "SkinThickness": 0.005,
+    "Insulin": 0.001,
+    "BMI": 0.04,
+    "DiabetesPedigreeFunction": 1.0
+  },
+  {
+    "Pregnancies": 0.03,
+    "Glucose": 0.02,
+    "BloodPressure": 0.005,
+    "SkinThickness": 0.005,
+    "Insulin": 0.001,
+    "BMI": 0.04,
+    "DiabetesPedigreeFunction": 0.8
+  },
+  {
+    "Pregnancies": 0.04,
+    "Glucose": 0.03,
+    "BloodPressure": 0.005,
+    "SkinThickness": 0.003,
+    "Insulin": 0.0015,
+    "BMI": 0.06,
+    "DiabetesPedigreeFunction": 0.8
+  },
+  {
+    "Pregnancies": 0.06,
+    "Glucose": 0.035,
+    "BloodPressure": 0.005,
+    "SkinThickness": 0.007,
+    "Insulin": 0.001,
+    "BMI": 0.05,
+    "DiabetesPedigreeFunction": 1.0
+  },
+  {
+    "Pregnancies": 0.03,
+    "Glucose": 0.025,
+    "BloodPressure": 0.005,
+    "SkinThickness": 0.003,
+    "Insulin": 0.0005,
+    "BMI": 0.05,
+    "DiabetesPedigreeFunction": 0.7
+  },
+  {
+    "Pregnancies": 0.06,
+    "Glucose": 0.035,
+    "BloodPressure": 0.01,
+    "SkinThickness": 0.005,
+    "Insulin": 0.001,
+    "BMI": 0.06,
+    "DiabetesPedigreeFunction": 1.1
+  },
+  {
+    "Pregnancies": 0.06,
+    "Glucose": 0.03,
+    "BloodPressure": 0.01,
+    "SkinThickness": 0.004,
+    "Insulin": 0.001,
+    "BMI": 0.05,
+    "DiabetesPedigreeFunction": 1.1
+  },
+  {
+    "Pregnancies": 0.04,
+    "Glucose": 0.03,
+    "BloodPressure": 0.004,
+    "SkinThickness": 0.007,
+    "Insulin": 0.002,
+    "BMI": 0.06,
+    "DiabetesPedigreeFunction": 0.6
+  },
+  {
+    "Pregnancies": 0.06,
+    "Glucose": 0.035,
+    "BloodPressure": 0.004,
+    "SkinThickness": 0.005,
+    "Insulin": 0.001,
+    "BMI": 0.06,
+    "DiabetesPedigreeFunction": 1.2
+  },
+  {
+    "Pregnancies": 0.08,
+    "Glucose": 0.03,
+    "BloodPressure": 0.005,
+    "SkinThickness": 0.004,
+    "Insulin": 0.001,
+    "BMI": 0.06,
+    "DiabetesPedigreeFunction": 0.8
+  },
+  {
+    "Pregnancies": 0.05,
+    "Glucose": 0.025,
+    "BloodPressure": 0.005,
+    "SkinThickness": 0.004,
+    "Insulin": 0.0015,
+    "BMI": 0.04,
+    "DiabetesPedigreeFunction": 0.8
+  },
+  {
+    "Pregnancies": 0.03,
+    "Glucose": 0.028,
+    "BloodPressure": 0.005,
+    "SkinThickness": 0.004,
+    "Insulin": 0.001,
+    "BMI": 0.05,
+    "DiabetesPedigreeFunction": 0.9
+  },
+  {
+    "Pregnancies": 0.05,
+    "Glucose": 0.022,
+    "BloodPressure": 0.008,
+    "SkinThickness": 0.003,
+    "Insulin": 0.001,
+    "BMI": 0.045,
+    "DiabetesPedigreeFunction": 0.9
+  },
+  {
+    "Pregnancies": 0.05,
+    "Glucose": 0.03,
+    "BloodPressure": 0.006,
+    "SkinThickness": 0.003,
+    "Insulin": 0.001,
+    "BMI": 0.04,
+    "DiabetesPedigreeFunction": 1.0
+  },
+  {
+    "Pregnancies": 0.03,
+    "Glucose": 0.032,
+    "BloodPressure": 0.005,
+    "SkinThickness": 0.007,
+    "Insulin": 0.001,
+    "BMI": 0.04,
+    "DiabetesPedigreeFunction": 0.9
+  },
+  {
+    "Pregnancies": 0.05,
+    "Glucose": 0.03,
+    "BloodPressure": 0.01,
+    "SkinThickness": 0.004,
+    "Insulin": 0.001,
+    "BMI": 0.06,
+    "DiabetesPedigreeFunction": 0.8
+  },
+  {
+    "Pregnancies": 0.03,
+    "Glucose": 0.02,
+    "BloodPressure": 0.005,
+    "SkinThickness": 0.005,
+    "Insulin": 0.001,
+    "BMI": 0.04,
+    "DiabetesPedigreeFunction": 0.6
+  },
+  {
+    "Pregnancies": 0.04,
+    "Glucose": 0.02,
+    "BloodPressure": 0.005,
+    "SkinThickness": 0.003,
+    "Insulin": 0.0008,
+    "BMI": 0.04,
+    "DiabetesPedigreeFunction": 0.8
+  },
+  {
+    "Pregnancies": 0.02,
+    "Glucose": 0.012,
+    "BloodPressure": 0.003,
+    "SkinThickness": 0.004,
+    "Insulin": 0.0008,
+    "BMI": 0.025,
+    "DiabetesPedigreeFunction": 0.7
+  },
+  {
+    "Pregnancies": 0.04,
+    "Glucose": 0.03,
+    "BloodPressure": 0.008,
+    "SkinThickness": 0.003,
+    "Insulin": 0.001,
+    "BMI": 0.04,
+    "DiabetesPedigreeFunction": 1.0
+  },
+  {
+    "Pregnancies": 0.03,
+    "Glucose": 0.03,
+    "BloodPressure": 0.005,
+    "SkinThickness": 0.007,
+    "Insulin": 0.001,
+    "BMI": 0.06,
+    "DiabetesPedigreeFunction": 0.8
+  },
+  {
+    "Pregnancies": 0.04,
+    "Glucose": 0.015,
+    "BloodPressure": 0.005,
+    "SkinThickness": 0.004,
+    "Insulin": 0.0008,
+    "BMI": 0.03,
+    "DiabetesPedigreeFunction": 0.8
+  },
+  {
+    "Pregnancies": 0.04,
+    "Glucose": 0.025,
+    "BloodPressure": 0.003,
+    "SkinThickness": 0.004,
+    "Insulin": 0.001,
+    "BMI": 0.06,
+    "DiabetesPedigreeFunction": 0.7
+  },
+  {
+    "Pregnancies": 0.03,
+    "Glucose": 0.035,
+    "BloodPressure": 0.005,
+    "SkinThickness": 0.007,
+    "Insulin": 0.001,
+    "BMI": 0.05,
+    "DiabetesPedigreeFunction": 1.0
+  },
+  {
+    "Pregnancies": 0.06,
+    "Glucose": 0.035,
+    "BloodPressure": 0.005,
+    "SkinThickness": 0.007,
+    "Insulin": 0.0015,
+    "BMI": 0.04,
+    "DiabetesPedigreeFunction": 0.8
+  },
+  {
+    "Pregnancies": 0.03,
+    "Glucose": 0.03,
+    "BloodPressure": 0.003,
+    "SkinThickness": 0.005,
+    "Insulin": 0.001,
+    "BMI": 0.04,
+    "DiabetesPedigreeFunction": 0.8
+  },
+  {
+    "Pregnancies": 0.05,
+    "Glucose": 0.03,
+    "BloodPressure": 0.01,
+    "SkinThickness": 0.01,
+    "Insulin": 0.0,
+    "BMI": 0.06,
+    "DiabetesPedigreeFunction": 1.0
+  },
+  {
+    "Pregnancies": 0.03,
+    "Glucose": 0.02,
+    "BloodPressure": 0.007,
+    "SkinThickness": 0.004,
+    "Insulin": -0.001,
+    "BMI": 0.05,
+    "DiabetesPedigreeFunction": 1.0
+  },
+  {
+    "Pregnancies": 0.04,
+    "Glucose": 0.03,
+    "BloodPressure": 0.004,
+    "SkinThickness": 0.006,
+    "Insulin": 0.001,
+    "BMI": 0.06,
+    "DiabetesPedigreeFunction": 1.0
+  },
+  {
+    "Pregnancies": 0.08,
+    "Glucose": 0.028,
+    "BloodPressure": 0.01,
+    "SkinThickness": 0.005,
+    "Insulin": 0.001,
+    "BMI": 0.06,
+    "DiabetesPedigreeFunction": 1.0
+  },
+  {
+    "Pregnancies": 0.06,
+    "Glucose": 0.028,
+    "BloodPressure": 0.005,
+    "SkinThickness": 0.005,
+    "Insulin": 0.001,
+    "BMI": 0.05,
+    "DiabetesPedigreeFunction": 1.0
+  },
+  {
+    "Pregnancies": 0.05,
+    "Glucose": 0.03,
+    "BloodPressure": 0.004,
+    "SkinThickness": 0.007,
+    "Insulin": 0.0008,
+    "BMI": 0.06,
+    "DiabetesPedigreeFunction": 0.9
+  },
+  {
+    "Pregnancies": 0.06,
+    "Glucose": 0.035,
+    "BloodPressure": 0.01,
+    "SkinThickness": 0.005,
+    "Insulin": 0.001,
+    "BMI": 0.08,
+    "DiabetesPedigreeFunction": 0.9
+  },
+  {
+    "Pregnancies": 0.05,
+    "Glucose": 0.025,
+    "BloodPressure": 0.008,
+    "SkinThickness": 0.003,
+    "Insulin": 0.001,
+    "BMI": 0.04,
+    "DiabetesPedigreeFunction": 0.8
+  },
+  {
+    "Pregnancies": 0.03,
+    "Glucose": 0.032,
+    "BloodPressure": 0.005,
+    "SkinThickness": 0.007,
+    "Insulin": 0.002,
+    "BMI": 0.045,
+    "DiabetesPedigreeFunction": 1.0
+  },
+  {
+    "Pregnancies": 0.06,
+    "Glucose": 0.035,
+    "BloodPressure": 0.008,
+    "SkinThickness": 0.003,
+    "Insulin": 0.001,
+    "BMI": 0.06,
+    "DiabetesPedigreeFunction": 1.0
+  },
+  {
+    "Pregnancies": 0.03,
+    "Glucose": 0.022,
+    "BloodPressure": 0.004,
+    "SkinThickness": 0.002,
+    "Insulin": 0.001,
+    "BMI": 0.045,
+    "DiabetesPedigreeFunction": 1.0
+  }
+]
