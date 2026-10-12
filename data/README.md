@@ -34,22 +34,36 @@ Note that the elicitation prompts described the twelve-feature problem, so the
 stored Boston priors do contain a `B` coordinate. This is a mild
 omitted-variable mismatch, discussed in the paper.
 
-## Cancer: check the terms before relying on redistribution
+## Cancer: provenance, and why it is mirrored here
 
-This compilation was published on data.world as the "OLS Regression Challenge"
-and aggregates the US Census American Community Survey, clinicaltrials.gov and
-cancer.gov. It is included here because it is the dataset behind the paper's
-most important single result and reproduction would otherwise be impossible.
+This county-level compilation was published openly by Noah Rippner on
+data.world as the "OLS Regression Challenge", a public teaching dataset. It
+aggregates three US federal government sources: the Census Bureau's American
+Community Survey, Cancer.gov and ClinicalTrials.gov.
 
-Two caveats. We have not been able to confirm an explicit redistribution
-licence for the compilation, as opposed to its public-domain upstream sources.
-And data.world has announced the retirement of its Open Data Community
-platform, so the original URL may not resolve indefinitely — which is part of
-why the file is mirrored here.
+**The original is gone.** data.world has retired its Open Data Community, and
+`data.world/nrippner/ols-regression-challenge` no longer resolves — the page
+now returns a retirement notice stating that those datasets are "no longer
+accessible or available for download". A mirror on Kaggle lists the licence as
+"Unknown", and we have not been able to locate any licence statement for the
+compilation.
 
-If the terms turn out to prohibit redistribution, delete `cancer/` and replace
-it with a download script; nothing else in the repository depends on the file
-being present until a script is run.
+**Why we include it anyway.** This is the dataset behind the paper's single
+clearest result — the one case where the elicited prior improves out-of-domain
+prediction without improving in-domain prediction. With the original host
+defunct, removing the file would make that result impossible for anyone to
+check.
+
+The position we take is this. The underlying numbers are US federal government
+outputs and are not subject to copyright. What could in principle carry rights
+is the compilation itself — the selection of counties and variables and the
+joins between sources — and we make no claim to it: credit belongs to Noah
+Rippner, who released it publicly as an open teaching resource. We redistribute
+it in good faith to preserve reproducibility of published work, and will remove
+it immediately on request from the compiler or any rights holder.
+
+If you are reusing this file for something else, the safe course is to go back
+to the three upstream sources rather than to rely on this copy.
 
 ## Heart Disease preprocessing
 
