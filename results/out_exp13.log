@@ -1,0 +1,49 @@
+
+=== Boston Housing ===
+  winner    Gemini Pro / prior_mean  CV 16.01545
+  duplicates of the winner (same fitted model): Gemini Pro/mixed
+  runner-up Opus 4.5 / correlated  CV 16.08641
+  margin 0.07096
+    vs single-candidate SE 2.89363  ->   0.02 SE
+    vs PAIRED SE           1.11847  ->   0.06 SE
+
+=== Cancer ===
+  winner    Gemini Pro (R) / correlated  CV 418.80350
+  runner-up GPT-5.1 / independent  CV 418.83956
+  margin 0.03606
+    vs single-candidate SE 24.76496  ->   0.00 SE
+    vs PAIRED SE           0.65344  ->   0.06 SE
+
+=== Heart Disease ===
+  winner    Opus 4.5 / correlated  CV 0.86904
+  runner-up Gemini Pro (R) / correlated  CV 0.86684
+  margin 0.00220
+    vs single-candidate SE 0.01868  ->   0.12 SE
+    vs PAIRED SE           0.00887  ->   0.25 SE
+
+=== Diabetes ===
+  winner    Opus 4.5 / correlated  CV 0.87534
+  runner-up Opus 4.5 / independent  CV 0.87476
+  margin 0.00058
+    vs single-candidate SE 0.03276  ->   0.02 SE
+    vs PAIRED SE           0.00035  ->   1.63 SE
+
+=== Adult ===
+  winner    Gemini Flash (R) / independent  CV 0.90960
+  runner-up Gemini Flash / correlated  CV 0.90960
+  margin 0.00000
+    vs single-candidate SE 0.00155  ->   0.00 SE
+    vs PAIRED SE           0.00004  ->   0.06 SE
+  -> out/exp13_paired_margin.csv
+
+============================================================================================
+Selection margin on the correct (paired) scale
+============================================================================================
+dataset              margin  / single SE  / paired SE  dupes
+Boston Housing      0.07096         0.02         0.06      1
+Cancer              0.03606         0.00         0.06      0
+Heart Disease       0.00220         0.12         0.25      0
+Diabetes            0.00058         0.02         1.63      0
+Adult               0.00000         0.00         0.06      0
+
+paired margins span 0.06 to 1.63 standard errors

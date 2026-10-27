@@ -162,7 +162,7 @@ def fig_placebo():
     ax.set_xlim(XMIN, XMAX)
     ax.set_xticks([-100, -10, 0, 10])
     ax.set_xticklabels(["-100", "-10", "0", "10"])
-    ax.set_xlabel("OOD lift over baseline (%), symlog scale   —   "
+    ax.set_xlabel("OOD lift over baseline (%), symlog scale: "
                   "MSE reduction / log-loss improvement")
 
     from matplotlib.lines import Line2D

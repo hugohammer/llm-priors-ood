@@ -7,7 +7,7 @@ Code, elicited priors and results for the paper
 
 Everything reported in the paper can be reproduced from this repository
 **without any LLM API calls**. The 50 sampled coefficient vectors for every
-(dataset, provider, mode) cell are stored in `priors/`, so the elicitation step
+(dataset, provider, mode) combination are stored in `priors/`, so the elicitation step
 — the only part that needs API access — never has to be repeated.
 
 ---
@@ -19,7 +19,7 @@ Everything reported in the paper can be reproduced from this repository
 | `llmpriors/` | The pipeline package: elicitation, prior estimation, the four model families, cross-validation, metrics, bootstrap |
 | `priors/` | 60 elicited prior bundles — 5 datasets x 12 LLM variants, 50 coefficient draws each |
 | `data/` | The five datasets. See `data/README.md` for provenance and one important modification |
-| `experiments/` | The follow-up analyses (`exp1`–`exp12`) and the figure scripts |
+| `experiments/` | The follow-up analyses (`exp1`–`exp13`) and the figure scripts |
 | `results/` | Every CSV and run log behind the tables and figures, plus `RESULTS.md`, a dated log of what was run and why |
 | `figures/` | Generated figures as they appear in the paper |
 
@@ -35,7 +35,7 @@ documenting corrections made during review.
 python -m venv venv && source venv/bin/activate
 pip install -r requirements.txt
 cd experiments
-python exp8_selection.py        # 48-cell candidate sweep and selection rules
+python exp8_selection.py        # 48-candidate sweep and selection rules
 python exp11_joint_ci.py        # nested resplit x bootstrap draws
 python exp12_ci_for_mean.py     # confidence vs prediction intervals
 ```
@@ -47,22 +47,23 @@ draws written by `exp11`.
 | Script | Produces |
 |---|---|
 | `exp1_prior_only.py` | Prior-only predictor (lambda to infinity) |
-| `exp2_threshold.py` | Threshold recalibration, Appendix B |
+| `exp2_threshold.py` | Threshold recalibration, Supplementary Note 2 |
 | `exp3_placebo.py` | Permuted and sign-flip placebo controls |
 | `exp4_resplits.py` | Source-split variability |
 | `exp5_joint.py` | Nested resplit x bootstrap intervals |
 | `exp6_pooled.py` | Cross-dataset pooling (reported but not used in the paper) |
 | `exp7_lambda_oracle.py` | Cost of selecting lambda on the source domain |
-| `exp8_selection.py` | Full 48-cell grid, within- and cross-family selection, in-domain lifts |
-| `exp9_epsilon.py` | Variance-floor sensitivity and Ledoit–Wolf shrinkage, Appendix D |
+| `exp8_selection.py` | Full 48-candidate grid, within- and cross-family selection, in-domain lifts |
+| `exp9_epsilon.py` | Variance-floor sensitivity and Ledoit–Wolf shrinkage, Supplementary Note 3 |
 | `exp10_heart_fbs.py` | Heart Disease ablation of the `fbs` feature |
 | `exp11_joint_ci.py` | As `exp5` but recording the split index |
 | `exp12_ci_for_mean.py` | Variance decomposition: CI for the mean vs prediction interval |
+| `exp13_paired_margin.py` | Paired standard error of the selection margin between candidates |
 
 ### Environment
 
 `requirements.txt` pins the versions used for the original runs. The
-referee-response analyses (`exp8`–`exp12`) were run on newer versions
+referee-response analyses (`exp8`–`exp13`) were run on newer versions
 (numpy 2.5.3, pandas 3.0.6, scikit-learn 1.9.1, scipy 1.18.1) and reproduced
 the stored outputs to within 1e-11, so either environment works.
 
@@ -77,7 +78,7 @@ or a local `.env` file. No keys are committed to this repository.
 ## The twelve LLM variants
 
 Six models from three providers, each queried with and without reasoning, at
-temperature 0.8, 50 draws per cell:
+temperature 0.8, 50 draws per combination:
 
 | Provider | Models |
 |---|---|

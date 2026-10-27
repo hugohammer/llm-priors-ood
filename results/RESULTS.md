@@ -798,3 +798,42 @@ Diabetes Independent and Correlated AUC.
 Target sampling is about half the variance on Boston (48-53%) and Diabetes AUC
 (53-57%), but only 0.7-4% on Cancer and 6-11% on the log-loss cells — which is
 why the correction matters most where the OOD partition is small.
+
+### exp13 — the selection margin on the paired scale (`exp13_paired_margin.py`)
+
+exp8 compared the CV margin between the winning candidate and the runner-up
+against the fold-level standard error of the winner's *own* CV score. That is
+the wrong yardstick: every candidate is scored on the same five folds, so
+fold-to-fold variation is common to all of them and cancels in a comparison.
+The margin belongs against the standard error of the paired difference,
+
+    SE_paired = sd_k( s_winner,k - s_runnerup,k ) / sqrt(K)
+
+Two further corrections to the same analysis. Mixed collapses onto Prior-Mean
+whenever its tuned gamma is 1, so the two are the same fitted model and an
+exact tie between them says nothing about selection; duplicates are identified
+by comparing per-fold score vectors and excluded, so the runner-up is the best
+genuinely *different* candidate.
+
+| dataset | winner | runner-up | margin / single SE | margin / paired SE |
+|---|---|---|---|---|
+| Boston Housing | Gemini Pro / Prior-Mean | Opus 4.5 / Correlated | 0.02 | **0.06** |
+| Cancer | Gemini Pro (R) / Correlated | GPT-5.1 / Independent | 0.00 | **0.06** |
+| Heart Disease | Opus 4.5 / Correlated | Gemini Pro (R) / Correlated | 0.12 | **0.25** |
+| Diabetes | Opus 4.5 / Correlated | Opus 4.5 / Independent | 0.02 | **1.63** |
+| Adult | Gemini Flash (R) / Independent | Gemini Flash / Correlated | 0.00 | **0.06** |
+
+The paired SE is far smaller than either candidate's own SE, so the margins are
+larger than exp8 made them look, but still below one standard error on four of
+five datasets. Only Diabetes separates its leading candidate by more than 1 SE.
+
+Boston Housing's apparent "tie to five decimals" is the duplicate case: Mixed
+selects gamma = 1 and is then Prior-Mean, i.e. one model appearing twice, not
+two candidates that cannot be told apart.
+
+Consequence for the paper: the earlier claim that selection is "close to
+choosing at random" was both too strong and self-contradictory (the same
+section argues selection reliably avoids the bottom of the pool). Section 4.4
+now reports the paired margins and claims only that selection does not
+reliably separate the *leading* candidates while still avoiding the lower part
+of the pool.
