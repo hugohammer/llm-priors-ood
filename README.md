@@ -2,8 +2,10 @@
 
 Code, elicited priors and results for the paper
 
-> **LLM knowledge for improved out-of-distribution tabular prediction**
+> **LLM knowledge for improved Out-of-Distribution Tabular Prediction -
+> A Cross-Validated Regularisation Approach**
 > S. Langseth, K. H. Hellton, H. L. Hammer
+> [arXiv:2610.36806](https://arxiv.org/abs/2610.36806)
 
 Everything reported in the paper can be reproduced from this repository
 **without any LLM API calls**. The 50 sampled coefficient vectors for every
@@ -111,7 +113,23 @@ coefficient at the elicited value rather than shrinking toward it.
 
 ## Citation
 
-See `CITATION.cff`. Please cite the paper rather than this repository alone.
+Please cite the paper rather than this repository alone.
+
+```bibtex
+@article{langseth2026llmpriors,
+  title   = {LLM knowledge for improved Out-of-Distribution Tabular
+             Prediction - A Cross-Validated Regularisation Approach},
+  author  = {Langseth, S{\o}lve and Hellton, Kristoffer Herland and
+             Hammer, Hugo L.},
+  journal = {arXiv preprint arXiv:2610.36806},
+  year    = {2026},
+  doi     = {10.48550/arXiv.2610.36806},
+  url     = {https://arxiv.org/abs/2610.36806}
+}
+```
+
+`CITATION.cff` carries the same metadata, so GitHub's "Cite this repository"
+button offers the paper.
 
 ## Licence
 
